@@ -14,6 +14,23 @@ elsif answer1 == 'No'
 	puts "Have a nice day"
 end
 
+puts "What are your monthly expenses?"
+x = gets.chomp.to_i
+
+puts "What is your monthly income?"
+y = gets.chomp.to_i
+
+until x > y
+ 	if x == y
+ 		break
+ 	elsif x < y
+ 		puts x += 200
+ 	end
+ end
+
+ puts "This shows how quickly you'll go in debt given the increase in your monthly expenses and stagnation of income."
+
+
 
 
 
